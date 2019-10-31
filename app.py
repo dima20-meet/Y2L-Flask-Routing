@@ -5,6 +5,15 @@ app = Flask(__name__)
 app.secret_key = "MY_SUPER_SECRET_KEY"
 
 
+@app.route('/')
+def hello world():
+	return render_template("home.html")
+
+@app.route('/')
+def hello store():
+	return render_template("store.html")
+
+
 ##### Code here ######
 
 
