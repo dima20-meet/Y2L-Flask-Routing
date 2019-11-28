@@ -44,6 +44,10 @@ def query_by_id(id):
 	Dog1 = session.query(Dog).filter_by(id=id).first()
 	return Dog1
 
+def search_user_by_username(name):
+	Dog1 = session.query(Dog).filter_by(name=name).first()
+	return Dog1
+
 def query_all():
 	Dog1 = session.query(Dog).all()
 	return Dog1
@@ -57,8 +61,8 @@ def add_to_cart(ProductID):
 	session.commit()
 
 
-# add_Product("Max", "Priceless", "dog3.jpg", "Cute dog. A bit of a cry baby. pls adopt... ASAP!")
-# products = query_all()
+ add_Product("Max", "Priceless", "dog3.jpg", "Cute dog. A bit of a cry baby. pls adopt... ASAP!")
+ products = query_all()
 
 
 

@@ -10,6 +10,12 @@
 <h1 style="font-size: 70px;position: absolute;left: 40%;bottom:50%">Coming Soon</h1>
 <!-- ------------------ -->
 
+{% for p in products %}
 
+	<p><button><a href="/add_to_cart/{{p.id}}">Adopt Now!</a></button></p>
+
+</div>
+
+{% endfor %}
 </body>
 </html>
